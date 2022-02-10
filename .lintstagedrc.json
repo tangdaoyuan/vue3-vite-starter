@@ -1,0 +1,12 @@
+{
+  "**/*.js": [],
+  "**/*.!(*d.)ts?(x)": [
+    "prettier --write",
+    "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "git add"
+  ],
+  "*.vue": [
+    "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "git add"
+  ]
+}
