@@ -9,6 +9,13 @@
 import { uuid } from "@/utils/uuid";
 import axios from "axios";
 import type { AxiosRequestConfig, AxiosResponse } from "axios";
+
+export type Response<T = any> = {
+  code: number;
+  data: T;
+  message?: string;
+};
+
 const axiosInstance = axios.create();
 
 axiosInstance.interceptors.request.use((config: AxiosRequestConfig) => {

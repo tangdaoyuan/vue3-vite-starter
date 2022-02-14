@@ -1,4 +1,5 @@
 import client from "@/api";
+import type { Response } from "@/api";
 
 export interface IUser {
   username: string;
@@ -9,7 +10,7 @@ export interface IUser {
  *
  * @returns {Promise}
  */
-export function fetchAccount(): Promise<IUser> {
+export function fetchAccount(): Promise<Response<IUser>> {
   return new Promise((resolve) => {
     client.get("/api/account").then((res) => resolve(res?.data));
   });
