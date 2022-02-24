@@ -2,7 +2,6 @@
   "name": "tdy-vue3-vite-template",
   "version": "0.0.2",
   "scripts": {
-    "prestart": "./init-husky.sh",
     "start": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
