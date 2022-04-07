@@ -1,24 +1,26 @@
 <script setup lang="ts">
-import TheWelcome from "@/components/TheWelcome.vue";
-import { useUserStore } from "@/stores/user";
-import { computed, onMounted } from "vue";
-const store = useUserStore();
+import { computed, onMounted } from 'vue'
+import TheWelcome from '@/components/TheWelcome.vue'
+import { useUserStore } from '@/stores/user'
+const store = useUserStore()
 
 onMounted(() => {
-  store.getAccount();
+  store.getAccount()
 
   setTimeout(() => {
-    store.$reset();
-  }, 3000);
-});
-const name = computed(() => store.accountName);
+    store.$reset()
+  }, 3000)
+})
+const name = computed(() => store.accountName)
 </script>
 
 <template>
   <main>
     <TheWelcome />
   </main>
-  <footer :class="$style['footer']">{{ name }}</footer>
+  <footer :class="$style['footer']">
+    {{ name }}
+  </footer>
 </template>
 
 <style lang="scss" module>

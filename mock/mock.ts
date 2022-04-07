@@ -1,27 +1,27 @@
-import type { MockMethod } from "vite-plugin-mock";
+import type { MockMethod } from 'vite-plugin-mock'
 
 export default [
   {
-    url: "/api/ping",
-    method: "get",
+    url: '/api/ping',
+    method: 'get',
     response: () => {
       return {
         code: 0,
-        data: "pong!",
-      };
+        data: 'pong!',
+      }
     },
   },
   {
-    url: "/api/account",
-    method: "get",
+    url: '/api/account',
+    method: 'get',
     response: () => {
       return {
         code: 0,
         data: {
-          username: "tangdaoyuan",
-          password: "123",
+          username: 'tangdaoyuan',
+          password: '123',
         },
-      };
+      }
     },
   },
-] as MockMethod[];
+] as MockMethod[]

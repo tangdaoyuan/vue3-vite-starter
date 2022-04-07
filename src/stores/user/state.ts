@@ -1,10 +1,10 @@
-export type IState = {
-  username: string;
-  password: string;
-};
+export interface IState {
+  username: string
+  password: string
+}
 const State = (): IState => ({
-  username: "UNKNOWN",
-  password: "UNKNOWN",
-});
+  username: 'UNKNOWN',
+  password: 'UNKNOWN',
+})
 
-export default State;
+export default State

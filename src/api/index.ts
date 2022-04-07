@@ -6,39 +6,39 @@
 /**
  * Axios Instance
  */
-import { uuid } from "@/utils/uuid";
-import axios from "axios";
-import type { AxiosRequestConfig, AxiosResponse } from "axios";
+import axios from 'axios'
+import type { AxiosRequestConfig, AxiosResponse } from 'axios'
+import { uuid } from '@/utils/uuid'
 
-export type Response<T = any> = {
-  code: number;
-  data: T;
-  message?: string;
-};
+export interface Response<T = any> {
+  code: number
+  data: T
+  message?: string
+}
 
-const axiosInstance = axios.create();
+const axiosInstance = axios.create()
 
 axiosInstance.interceptors.request.use((config: AxiosRequestConfig) => {
   // 生成uuid 附着在请求头中
-  if (config.headers) {
-    config.headers["Request-ID"] = uuid();
-  }
-  return config;
-});
+  if (config.headers)
+    config.headers['Request-ID'] = uuid()
 
-const respOnFulfilled = function (resp: AxiosResponse) {
-  return resp;
-};
+  return config
+})
 
-const respOnReject = function (error: any) {
-  const { response } = error;
+const respOnFulfilled = function(resp: AxiosResponse) {
+  return resp
+}
+
+const respOnReject = function(error: any) {
+  const { response } = error
   if (response?.status === 401) {
-    const { location } = response.headers;
-    window.location.href = `${location}`;
+    const { location } = response.headers
+    window.location.href = `${location}`
   }
-  Promise.reject(error);
-};
+  Promise.reject(error)
+}
 
-axiosInstance.interceptors.response.use(respOnFulfilled, respOnReject);
+axiosInstance.interceptors.response.use(respOnFulfilled, respOnReject)
 
-export default axiosInstance;
+export default axiosInstance
