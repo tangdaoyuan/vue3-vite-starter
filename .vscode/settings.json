@@ -93,7 +93,7 @@
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
-  "eslint.quiet": true,
+  "eslint.quiet": false,
   "eslint.validate": [
     "javascript",
     "typescript",
