@@ -11,7 +11,7 @@ onMounted(() => {
     store.$reset()
   }, 3000)
 })
-const name = computed(() => store.accountName)
+const name = store.accountName
 </script>
 
 <template>
