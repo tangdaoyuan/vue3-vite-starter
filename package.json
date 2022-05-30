@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "axios": "^0.25.0",
-    "element-plus": "^2.2.1",
+    "element-plus": "^2.2.2",
     "lodash": "^4.17.21",
     "pinia": "^2.0.14",
     "uuid": "^8.3.2",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
-    "@suger-tdy/eslint-config": "^1.1.0",
+    "@suger-tdy/eslint-config": "^1.1.1",
     "@types/jsdom": "^16.2.14",
     "@types/lodash": "^4.14.182",
     "@types/node": "^16.11.36",
@@ -36,7 +36,7 @@
     "@vitejs/plugin-vue-jsx": "^1.3.10",
     "@vue/test-utils": "^2.0.0",
     "@vue/tsconfig": "^0.1.3",
-    "cypress": "^9.6.1",
+    "cypress": "^9.7.0",
     "esbuild": "npm:esbuild-wasm@^0.14.34",
     "eslint": "^8.16.0",
     "eslint-plugin-cypress": "^2.12.1",
