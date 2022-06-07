@@ -1,4 +1,4 @@
-import type { MockMethod } from 'vite-plugin-mock'
+import type { MockHandler } from 'unplugin-mock/types'
 
 export default [
   {
@@ -24,4 +24,4 @@ export default [
       }
     },
   },
-] as MockMethod[]
+] as MockHandler[]

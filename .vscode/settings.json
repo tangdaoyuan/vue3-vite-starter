@@ -26,7 +26,7 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "custom",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Suger Material Dark",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.tabCloseButton": "left",
@@ -36,8 +36,8 @@
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "file-icons",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Default Dark+",
-  "workbench.preferredLightColorTheme": "Default Light+",
+  "workbench.preferredDarkColorTheme": "Suger Material Dark",
+  "workbench.preferredLightColorTheme": "Suger Material Light",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
@@ -77,7 +77,6 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
-
   // Extension configs
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
@@ -183,4 +182,5 @@
     "suger",
     "tangdaoyuan"
   ],
+  "typescript.tsdk": "node_modules/typescript/lib",
 }

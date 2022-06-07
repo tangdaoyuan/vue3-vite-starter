@@ -2,14 +2,12 @@
   "recommendations": [
     "lokalise.i18n-ally",
     "file-icons.file-icons",
-    "sainnhe.gruvbox-material",
-
+    "Tedy.suger-material-theme",
     "dbaeumer.vscode-eslint",
-    "johnsoncodehk.volar",
+    "Vue.volar",
     "GitHub.copilot",
     "usernamehw.errorlens",
     "streetsidesoftware.code-spell-checker",
-
     "amodio.tsl-problem-matcher",
     "eamodio.gitlens",
     "EditorConfig.EditorConfig",

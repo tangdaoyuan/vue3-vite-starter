@@ -5,10 +5,10 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import { viteMockServe } from 'vite-plugin-mock'
+import viteMockerPlugin from 'unplugin-mock/vite'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(({ mode }) => {
   return {
     plugins: [
       vue(),
@@ -19,10 +19,9 @@ export default defineConfig(({ command }) => {
       Components({
         resolvers: [ElementPlusResolver()],
       }),
-      viteMockServe({
-        // default
-        mockPath: 'mock',
-        localEnabled: command === 'serve',
+      viteMockerPlugin({
+        mockPath: './mock',
+        enable: mode === 'mock',
       }),
     ],
     resolve: {
