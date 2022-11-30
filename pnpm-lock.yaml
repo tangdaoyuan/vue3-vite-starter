@@ -7,7 +7,7 @@ specifiers:
   '@types/jsdom': 16.2.15
   '@types/lodash': 4.14.190
   '@types/node': 17.0.40
-  '@types/uuid': 8.3.4
+  '@types/uuid': 9.0.0
   '@vitejs/plugin-vue': 3.2.0
   '@vitejs/plugin-vue-jsx': 2.1.1
   '@vue/test-utils': 2.2.4
@@ -29,7 +29,7 @@ specifiers:
   unplugin-auto-import: 0.12.0
   unplugin-mock: 1.0.2
   unplugin-vue-components: 0.22.11
-  uuid: 8.3.2
+  uuid: 9.0.0
   vite: 3.2.4
   vitest: 0.25.3
   vue: 3.2.45
@@ -41,7 +41,7 @@ dependencies:
   element-plus: 2.2.25_vue@3.2.45
   lodash: 4.17.21
   pinia: 2.0.27_mgnvym7yiazkylwwogi5r767ue
-  uuid: 8.3.2
+  uuid: 9.0.0
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
@@ -52,7 +52,7 @@ devDependencies:
   '@types/jsdom': 16.2.15
   '@types/lodash': 4.14.190
   '@types/node': 17.0.40
-  '@types/uuid': 8.3.4
+  '@types/uuid': 9.0.0
   '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
   '@vitejs/plugin-vue-jsx': 2.1.1_vite@3.2.4+vue@3.2.45
   '@vue/test-utils': 2.2.4_vue@3.2.45
@@ -970,8 +970,8 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
 
-  /@types/uuid/8.3.4:
-    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
+  /@types/uuid/9.0.0:
+    resolution: {integrity: sha512-kr90f+ERiQtKWMz5rP32ltJ/BtULDI5RVO0uavn1HQUOwjx0R1h0rnDYNL0CepF1zL5bSY6FISAfd9tOdDhU5Q==}
     dev: true
 
   /@types/web-bluetooth/0.0.15:
@@ -6218,6 +6218,12 @@ packages:
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
+    dev: true
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
+    dev: false
 
   /v8-compile-cache-lib/3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
