@@ -24,7 +24,7 @@ specifiers:
   pinia: 2.0.29
   sass: 1.57.1
   standard-version: 9.5.0
-  start-server-and-test: 1.15.3
+  start-server-and-test: 2.0.0
   typescript: 4.9.4
   unplugin-auto-import: 0.12.1
   unplugin-mock: 1.0.3
@@ -65,7 +65,7 @@ devDependencies:
   mockjs: 1.1.0
   sass: 1.57.1
   standard-version: 9.5.0
-  start-server-and-test: 1.15.3
+  start-server-and-test: 2.0.0
   typescript: 4.9.4
   unplugin-auto-import: 0.12.1
   unplugin-mock: 1.0.3_vite@3.2.5
@@ -1615,7 +1615,7 @@ packages:
   /axios/0.27.2_debug@4.3.4:
     resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
     dependencies:
-      follow-redirects: 1.15.1
+      follow-redirects: 1.15.1_debug@4.3.4
       form-data: 4.0.0
     transitivePeerDependencies:
       - debug
@@ -3540,6 +3540,19 @@ packages:
     peerDependenciesMeta:
       debug:
         optional: true
+    dev: false
+
+  /follow-redirects/1.15.1_debug@4.3.4:
+    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dependencies:
+      debug: 4.3.4
+    dev: true
 
   /for-each/0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
@@ -5916,8 +5929,8 @@ packages:
       yargs: 16.2.0
     dev: true
 
-  /start-server-and-test/1.15.3:
-    resolution: {integrity: sha512-4GqkqghvUR9cJ8buvtgkyT0AHgVwCJ5EN8eDEhe9grTChGwWUxGm2nqfSeE9+0PZkLRdFqcwTwxVHe1y3ViutQ==}
+  /start-server-and-test/2.0.0:
+    resolution: {integrity: sha512-UqKLw0mJbfrsG1jcRLTUlvuRi9sjNuUiDOLI42r7R5fA9dsFoywAy9DoLXNYys9B886E4RCKb+qM1Gzu96h7DQ==}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
