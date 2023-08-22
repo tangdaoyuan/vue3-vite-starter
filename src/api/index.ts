@@ -7,7 +7,7 @@
  * Axios Instance
  */
 import axios from 'axios'
-import type { AxiosRequestConfig, AxiosResponse } from 'axios'
+import type { AxiosResponse } from 'axios'
 import { uuid } from '@/utils/uuid'
 
 export interface Response<T = any> {
@@ -18,7 +18,7 @@ export interface Response<T = any> {
 
 const axiosInstance = axios.create()
 
-axiosInstance.interceptors.request.use((config: AxiosRequestConfig) => {
+axiosInstance.interceptors.request.use((config) => {
   // 生成uuid 附着在请求头中
   if (config.headers)
     config.headers['Request-ID'] = uuid()

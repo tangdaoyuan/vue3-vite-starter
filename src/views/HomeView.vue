@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import TheWelcome from '@/components/TheWelcome.vue'
 import { useUserStore } from '@/stores/user'
 const store = useUserStore()
@@ -11,7 +11,6 @@ onMounted(() => {
     store.$reset()
   }, 3000)
 })
-const name = store.accountName
 </script>
 
 <template>
@@ -19,7 +18,7 @@ const name = store.accountName
     <TheWelcome />
   </main>
   <footer :class="$style['footer']">
-    {{ name }}
+    {{ store.accountName }}
   </footer>
 </template>
 

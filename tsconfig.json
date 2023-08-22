@@ -1,12 +1,14 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "exclude": ["src/**/__tests__/*"],
+  "moduleResolution": "node",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["element-plus/global.d.ts", "./auto-imports.d.ts"]
   },
 
   "references": [
