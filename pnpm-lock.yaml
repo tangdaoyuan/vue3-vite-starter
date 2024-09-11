@@ -17,7 +17,7 @@ specifiers:
   element-plus: 2.3.9
   eslint: 8.47.0
   eslint-plugin-cypress: 2.14.0
-  husky: 8.0.3
+  husky: 9.1.6
   jsdom: 22.1.0
   lodash: 4.17.21
   mockjs: 1.1.0
@@ -60,7 +60,7 @@ devDependencies:
   cypress: 12.17.4
   eslint: 8.47.0
   eslint-plugin-cypress: 2.14.0_eslint@8.47.0
-  husky: 8.0.3
+  husky: 9.1.6
   jsdom: 22.1.0
   mockjs: 1.1.0
   sass: 1.66.1
@@ -4165,9 +4165,9 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky/8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
+  /husky/9.1.6:
+    resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
+    engines: {node: '>=18'}
     hasBin: true
     dev: true
 

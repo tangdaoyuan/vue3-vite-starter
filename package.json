@@ -41,7 +41,7 @@
     "cypress": "12.17.4",
     "eslint": "8.47.0",
     "eslint-plugin-cypress": "2.14.0",
-    "husky": "8.0.3",
+    "husky": "9.1.6",
     "jsdom": "22.1.0",
     "mockjs": "1.1.0",
     "sass": "1.66.1",
