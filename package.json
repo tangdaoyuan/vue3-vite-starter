@@ -51,7 +51,7 @@
     "unplugin-auto-import": "0.16.6",
     "unplugin-mock": "1.0.3",
     "unplugin-vue-components": "0.25.1",
-    "vite": "4.4.9",
+    "vite": "5.4.10",
     "vitest": "0.34.2",
     "vue-tsc": "1.8.8"
   }
