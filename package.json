@@ -32,7 +32,7 @@
     "@suger-tdy/eslint-config": "1.1.14",
     "@types/jsdom": "21.1.1",
     "@types/lodash": "4.14.197",
-    "@types/node": "18.17.7",
+    "@types/node": "20.17.0",
     "@types/uuid": "9.0.2",
     "@vitejs/plugin-vue": "4.3.3",
     "@vitejs/plugin-vue-jsx": "3.0.2",
