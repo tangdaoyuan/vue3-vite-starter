@@ -45,7 +45,7 @@
     "jsdom": "22.1.0",
     "mockjs": "1.1.0",
     "sass": "1.66.1",
-    "standard-version": "9.5.0",
+    "commit-and-tag-version": "9.5.0",
     "start-server-and-test": "2.0.0",
     "typescript": "5.1.6",
     "unplugin-auto-import": "0.16.6",
